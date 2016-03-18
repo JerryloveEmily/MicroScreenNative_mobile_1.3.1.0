@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tabbar_bg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/x20"
+        android:paddingLeft="@dimen/x20"
+        app:layout_widthPercent="40%"
+        android:layout_alignParentLeft="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/id_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/id_tv_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello android"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/id_tv_activity_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right" />
+
+            <com.boding.microscreen.widget.MarqueeTextView
+                android:id="@+id/id_tv_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:paddingLeft="@dimen/x50"
+            android:paddingRight="@dimen/x50"
+            android:text="@string/string_back"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@drawable/btn_pager" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_sdv_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="60%"
+        android:background="#E0E0E0"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/x20"
+        android:contentDescription="@string/app_name"
+        />
+
+</android.support.percent.PercentRelativeLayout>

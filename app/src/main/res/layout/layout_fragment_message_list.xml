@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ll_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/module_bg"
+    android:orientation="horizontal">
+
+    <!--公司活动主题，二维码-->
+    <LinearLayout
+        android:layout_width="@dimen/x120"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x10"
+        android:orientation="vertical"
+        android:background="@drawable/module_bg"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/id_iv_logo"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/app_name"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_tv_theme"
+                android:layout_width="@dimen/x40"
+                android:layout_height="wrap_content"
+                android:textDirection="inherit"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/id_tv_spon_name"
+                android:layout_width="@dimen/x40"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:textDirection="inherit"
+                android:textSize="26sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/id_iv_qrcode"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120"
+            android:layout_marginTop="@dimen/x5"
+            android:contentDescription="@string/app_name"
+            />
+    </LinearLayout>
+
+    <!--留言墙-->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/x10"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_rv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="200"
+            android:focusableInTouchMode="false"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x95"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/ibtn_arrow_up"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/ic_up_arrow"
+            android:background="@drawable/ic_arrow"
+            android:contentDescription="@string/app_name"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_arrow_down"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginTop="@dimen/x50"
+            android:src="@drawable/ic_down_arrow"
+            android:background="@drawable/ic_arrow"
+            android:contentDescription="@string/app_name"
+            />
+
+    </LinearLayout>
+
+    <!--没有内容-->
+    <TextView
+        android:id="@+id/id_tv_empty"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:text="没有内容"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

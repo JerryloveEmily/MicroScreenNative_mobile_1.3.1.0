@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ca3502</color>
+    <color name="colorPrimaryLight">#f48560</color>
+
+    <color name="white">#ffff</color>
+    <color name="black">#000000</color>
+    <color name="translusent">#0000</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="light_black">#22000000</color>
+    <color name="violet">#660066</color>
+    <color name="black_a99">#99000000</color>
+    <color name="black_a55">#55000000</color>
+
+    <color name="orange">#FF3000</color>
+    <color name="red">#FF3000</color>
+    <color name="dark_red">#b72604</color>
+</resources>

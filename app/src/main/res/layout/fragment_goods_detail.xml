@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        android:descendantFocusability="beforeDescendants"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <ImageView
+                android:id="@+id/iv_goods_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nbjn" />
+
+            <Button
+                android:id="@+id/btn_goods_img_more"
+                android:layout_width="@dimen/x180"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/x10"
+                android:background="@drawable/btn_goods_moreimg"
+                android:text="更多图片"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x30" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_goods_qrcode"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/x200"
+                android:scaleType="fitCenter"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:orientation="vertical"
+            android:paddingLeft="25dp">
+
+            <TextView
+                android:id="@+id/tv_goods_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="南博基尼"
+                android:textSize="35sp" />
+            <!--价格-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_goods_detail_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5000W"
+                    android:textColor="@color/dark_red"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="20dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="商品详情"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btn_goodsdetail_back"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_goodsdetail_back"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

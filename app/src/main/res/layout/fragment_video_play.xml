@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_fl_contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_pre_pager"
+        />
+
+    <ImageView
+        android:id="@+id/id_iv_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/id_ibtn_play_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/play_video"
+        android:background="@drawable/btn_pre_pager"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

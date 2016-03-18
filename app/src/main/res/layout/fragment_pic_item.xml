@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ll_channel_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@drawable/tab_item_bg_normal"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/id_btn_channel_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:background="@null"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginBottom="@dimen/x15"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:focusable="false"
+        />
+
+</LinearLayout>

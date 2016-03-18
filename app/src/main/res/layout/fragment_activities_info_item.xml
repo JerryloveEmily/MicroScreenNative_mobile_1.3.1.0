@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/x353"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/module_bg"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/id_tv_activity_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x2"
+            android:background="@drawable/divider_line"
+            />
+
+        <com.boding.microscreen.widget.MarqueeTextView
+            android:id="@+id/id_tv_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10"
+            android:layout_marginTop="@dimen/x20"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_iv_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/x5"
+        android:background="@drawable/module_bg"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        />
+
+</LinearLayout>

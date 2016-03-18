@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/x5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/btn_channel_item"
+    >
+
+    <TextView
+        android:id="@+id/id_tv_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="祝贺酒会举办成功祝贺酒会举办成功祝贺酒会举办成功！"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        />
+
+</LinearLayout>

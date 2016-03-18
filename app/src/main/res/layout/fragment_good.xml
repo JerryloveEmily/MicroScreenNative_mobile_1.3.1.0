@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_goods_types"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_weight="1"
+        android:background="@drawable/tabbar_bg"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/tabbar_bg"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x50"
+            android:paddingRight="@dimen/x50"
+            android:paddingTop="@dimen/x5"
+            android:text="商品"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@drawable/btn_divide" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_goods_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <!--展示 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/id_fl_picture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="@drawable/tabbar_bg">
+            <!-- <android.support.v4.view.ViewPager
+                 android:id="@+id/vp_goods_photo"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:focusable="false"
+                 android:focusableInTouchMode="false"
+                 />-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vp_goods_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_goods_pre"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_margin="@dimen/x5"
+                    android:background="@drawable/btn_pre_pager"
+                    android:src="@drawable/pref_picture" />
+
+                <ImageButton
+                    android:id="@+id/btn_goods_stop"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_margin="@dimen/x5"
+                    android:background="@drawable/btn_pre_pager"
+                    android:src="@drawable/stop_play" />
+
+                <ImageButton
+                    android:id="@+id/btn_goods_next"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_margin="@dimen/x5"
+                    android:background="@drawable/btn_pre_pager"
+                    android:src="@drawable/next_picture" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/highlighted_text_material_dark"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_goods_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/x5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_goods_qrcode"
+                    android:layout_width="@dimen/x78"
+                    android:layout_height="@dimen/x78" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goods_buy" />
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/tv_goods_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

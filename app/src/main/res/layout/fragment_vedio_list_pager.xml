@@ -1,0 +1,18 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <GridView
+        android:id="@+id/gv_pager_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="@dimen/x20"
+        android:horizontalSpacing="@dimen/x20"
+        android:numColumns="3"
+        android:listSelector="@drawable/tab_item_bg_normal"
+        />
+
+</android.support.v4.widget.SwipeRefreshLayout>

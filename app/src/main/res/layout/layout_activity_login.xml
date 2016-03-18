@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/id_fl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageButton
+        android:id="@+id/ibtn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_red_36dp"
+        android:padding="10dp"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        />
+
+    <ImageView
+        android:id="@+id/id_iv_login_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/login_top_img" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_iv_login_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_edit_bg"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:hint="@string/bind_vilidate_code"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/bind_vilidate_code"
+        android:textColor="#EA5421"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_enter_bg"
+        android:gravity="center"
+        android:text="@string/enter_mainscreen"
+        android:textColor="#ffff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textColor="#726B59"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_currentVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/version_name"
+            android:textColor="#726B59"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>
